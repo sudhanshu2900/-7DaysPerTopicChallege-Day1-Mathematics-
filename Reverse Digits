@@ -1,0 +1,18 @@
+PROBLEM: I/P= 200
+         O/P= 2
+         
+         I/P=234
+         O/P=432
+         
+SOLUTION:
+
+long long int reverse_digit(long long int n)
+		{
+		    long long int rev=0;
+		    while(n!=0){
+		        long long int r=n%10;
+		        rev=rev*10+r;
+		        n=n/10;
+		    }
+		    return rev;
+		}
