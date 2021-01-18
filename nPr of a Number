@@ -1,0 +1,18 @@
+PROBLEM: I/P= n=2, r=1
+         O/P= 2
+         
+         Explain: nPr = (n!)/(n-r)!
+         
+SOLUTION:
+
+ long long fact(int n){
+     if(n==1 || n==0){
+         return 1;
+     }
+     else{
+         return n*fact(n-1);
+     }
+ }
+ long long nPr(int n, int r){
+     return fact(n)/fact(n-r);
+ }
