@@ -1,0 +1,22 @@
+PROBLEM: I/P= 4567
+         O/P= 4567
+         
+         I/P=1004
+         O/P=1554
+         
+SOLUTION:
+
+int convertFive(int n)
+{
+    int r1, rev=0, i=1;
+    while(n!=0){
+        r1=n%10;
+        if(r1==0){
+            r1=5;
+        }
+        rev=rev+(r1*i);
+        i=i*10;
+        n=n/10;
+    }
+    return rev;
+}
