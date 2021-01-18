@@ -1,0 +1,19 @@
+PROBLEM: I/P= 90, 100, 70, 68, 89
+         O/P= 89
+         
+         I/P= 30, 40, 10, 2
+         O/P= 25
+         
+SOLUTION:
+
+    int find_median(vector<int> v)
+		{
+		    int n=v.size();
+		    sort(v.begin(),v.end());
+		    if(n%2==0){
+		        return (v[(n/2)-1]+v[n/2])/2;
+		    }
+		    else{
+		        return v[n/2];
+		    }
+		}
